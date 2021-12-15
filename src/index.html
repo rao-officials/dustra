@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dustra</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navyBlue: '#022147',
+            primaryRed: '#f42223'
+          },
+
+          fontFamily: {
+            'customFont': ['Asap', 'sans-serif'],
+          },
+
+          backgroundImage: {
+            'pattern': "url('./assets/images/pattern.png')",
+
+          }
+        },
+      }
+    }
+  </script>
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+
+    
+  }
+</style>
+
+
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+
+</html>
