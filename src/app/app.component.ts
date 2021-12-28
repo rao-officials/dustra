@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dustra';
+
+mainMenus = ['Home', 'PagesProjects', 'Services', 'Team', 'Blog', 'Contact us'];  
 }
